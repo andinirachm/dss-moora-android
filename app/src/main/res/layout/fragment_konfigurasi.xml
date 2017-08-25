@@ -1,0 +1,970 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masukkan batas bobot tiap kriteria :"
+            android:textSize="15sp"
+            android:id="@+id/textView"
+            android:textColor="#000"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Batas yang Anda masukkan akan mempengaruhi hasil"
+            android:textSize="12sp"
+            android:textColor="#000"
+            android:layout_marginTop="0dp"
+            android:textStyle="italic"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jarak :"
+            android:layout_marginTop="20dp"
+            android:textSize="14sp"
+            android:id="@+id/textView2"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_alignParentStart="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:text="Sangat Dekat :"
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:textColor="#000"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:id="@+id/etJarakSangatDekat1"
+                android:layout_width="match_parent"
+                android:layout_weight="1.2"
+                android:layout_height="40dp"
+                android:textSize="15sp"
+                android:layout_marginLeft="5dp"
+                android:inputType="number"
+
+                android:enabled="false"
+                android:gravity="center"
+                android:hint="0" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1.3"
+                android:text="X"
+                android:textSize="15sp"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="#000"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:id="@+id/etJarakSangatDekat2"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:textSize="15sp"
+                android:layout_marginLeft="5dp"
+                android:inputType="number"
+
+                android:gravity="center_vertical|center_horizontal"
+                android:hint="(KM)" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Dekat :"
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:textColor="#000"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:id="@+id/etJarakDekat1"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:textSize="15sp"
+                android:layout_marginLeft="5dp"
+                android:inputType="number"
+
+                android:hint="(KM)" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text=" X "
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:textColor="#000"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:id="@+id/etJarakDekat2"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:textSize="15sp"
+                android:layout_marginLeft="5dp"
+                android:inputType="number"
+
+                android:hint="(KM)" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Sedang :"
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:textColor="#000"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:id="@+id/etJarakSedang1"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:textSize="15sp"
+                android:layout_marginLeft="5dp"
+                android:inputType="number"
+
+                android:hint="(KM)" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="X"
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:textColor="#000"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:id="@+id/etJarakSedang2"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:textSize="15sp"
+                android:layout_marginLeft="5dp"
+                android:inputType="number"
+                android:hint="(KM)" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Jauh :"
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:textColor="#000"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:id="@+id/etJarakJauh1"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:textSize="15sp"
+                android:layout_marginLeft="5dp"
+                android:inputType="number"
+
+                android:hint="(KM)" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="X"
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:textColor="#000"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:id="@+id/etJarakJauh2"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:textSize="15sp"
+                android:layout_marginLeft="5dp"
+                android:inputType="number"
+
+                android:hint="(KM)" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Sangat Jauh :"
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:textColor="#000"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="X"
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:textColor="#000"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:id="@+id/etJarakSangatJauh2"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:textSize="15sp"
+                android:layout_marginLeft="5dp"
+                android:inputType="number"
+
+                android:hint="(KM)" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Biaya :"
+            android:textSize="17sp"
+            android:id="@+id/textView3"
+            android:layout_marginTop="20dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_alignParentStart="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:text="Sangat Murah :"
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:textColor="#000"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:id="@+id/etBiayaSangatMurah1"
+                android:layout_width="match_parent"
+                android:layout_weight="1.2"
+                android:layout_height="40dp"
+                android:textSize="15sp"
+                android:layout_marginLeft="5dp"
+                android:inputType="number"
+
+                android:enabled="false"
+                android:gravity="center"
+                android:hint="0" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1.3"
+                android:text="X"
+                android:textSize="15sp"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="#000"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:id="@+id/etBiayaSangatMurah2"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:textSize="15sp"
+                android:layout_marginLeft="5dp"
+                android:inputType="number"
+
+                android:gravity="center_vertical|center_horizontal"
+                android:hint="Rp." />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Murah :"
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:textColor="#000"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:id="@+id/etBiayaMurah1"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:textSize="15sp"
+                android:layout_marginLeft="5dp"
+                android:inputType="number"
+
+                android:hint="Rp." />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="X"
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:textColor="#000"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:id="@+id/etBiayaMurah2"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:textSize="15sp"
+                android:layout_marginLeft="5dp"
+                android:inputType="number"
+
+                android:hint="Rp." />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Sedang :"
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:textColor="#000"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:id="@+id/etBiayaSedang1"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:textSize="15sp"
+                android:layout_marginLeft="5dp"
+                android:inputType="number"
+
+                android:hint="Rp." />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="X"
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:textColor="#000"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:id="@+id/etBiayaSedang2"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:textSize="15sp"
+                android:layout_marginLeft="5dp"
+                android:inputType="number"
+
+                android:hint="Rp." />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Mahal :"
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:textColor="#000"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:id="@+id/etBiayaMahal1"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:textSize="15sp"
+                android:layout_marginLeft="5dp"
+                android:inputType="number"
+
+                android:hint="Rp." />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="X"
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:textColor="#000"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:id="@+id/etBiayaMahal2"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:textSize="15sp"
+                android:layout_marginLeft="5dp"
+                android:inputType="number"
+
+                android:hint="Rp." />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Sangat Mahal :"
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:textColor="#000"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="   X > "
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:textColor="#000"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:id="@+id/etBiayaSangatMahal2"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:textSize="15sp"
+                android:layout_marginLeft="5dp"
+                android:inputType="number"
+
+                android:hint="Rp." />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Popularitas :"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentStart="true" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:text="Sangat Rendah :"
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:textColor="#000"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:id="@+id/etPopSangatRendah1"
+                android:layout_width="match_parent"
+                android:layout_weight="1.2"
+                android:layout_height="40dp"
+                android:textSize="15sp"
+                android:layout_marginLeft="5dp"
+                android:inputType="number"
+
+                android:enabled="false"
+                android:gravity="center"
+                android:hint="0" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1.3"
+                android:text="X"
+                android:textSize="15sp"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="#000"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:id="@+id/etPopSangatRendah2"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:textSize="15sp"
+                android:layout_marginLeft="5dp"
+                android:inputType="number"
+
+                android:gravity="center_vertical|center_horizontal"
+                android:hint="Jumlah" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Rendah :"
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:textColor="#000"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:id="@+id/etPopRendah1"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:textSize="15sp"
+                android:layout_marginLeft="5dp"
+                android:inputType="number"
+
+                android:hint="Jumlah" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="X"
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:textColor="#000"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:id="@+id/etPopRendah2"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:textSize="15sp"
+                android:layout_marginLeft="5dp"
+                android:inputType="number"
+
+                android:hint="Jumlah" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Sedang :"
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:textColor="#000"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:id="@+id/etPopSedang1"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:textSize="15sp"
+                android:layout_marginLeft="5dp"
+                android:inputType="number"
+
+                android:hint="Jumlah" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="X"
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:textColor="#000"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:id="@+id/etPopSedang2"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:textSize="15sp"
+                android:layout_marginLeft="5dp"
+                android:inputType="number"
+
+                android:hint="Jumlah" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Tinggi :"
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:textColor="#000"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:id="@+id/etPopTinggi1"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:textSize="15sp"
+                android:layout_marginLeft="5dp"
+                android:inputType="number"
+                android:hint="Jumlah" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="X"
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:textColor="#000"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:id="@+id/etPopTinggi2"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:textSize="15sp"
+                android:layout_marginLeft="5dp"
+                android:inputType="number"
+                android:hint="Jumlah" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Sangat Tinggi :"
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:textColor="#000"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="  X"
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:textColor="#000"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:id="@+id/etPopSangatTinggi2"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:textSize="15sp"
+                android:layout_marginLeft="5dp"
+                android:inputType="number"
+                android:hint="Jumlah" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Produk :"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentStart="true" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:text="Sangat Sedikit :"
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:textColor="#000"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:id="@+id/etProSangatSedikit1"
+                android:layout_width="match_parent"
+                android:layout_weight="1.2"
+                android:layout_height="40dp"
+                android:textSize="15sp"
+                android:layout_marginLeft="5dp"
+                android:inputType="number"
+
+                android:enabled="false"
+                android:gravity="center"
+                android:hint="0" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1.3"
+                android:text="X"
+                android:textSize="15sp"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="#000"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:id="@+id/etProSangatSedikit2"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:textSize="15sp"
+                android:layout_marginLeft="5dp"
+                android:inputType="number"
+                android:gravity="center_vertical|center_horizontal"
+                android:hint="Jumlah" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Sedikit :"
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:textColor="#000"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:id="@+id/etProSedikit1"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:textSize="15sp"
+                android:layout_marginLeft="5dp"
+                android:inputType="number"
+
+                android:hint="Jumlah" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="X"
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:textColor="#000"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:id="@+id/etProSedikit2"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:textSize="15sp"
+                android:layout_marginLeft="5dp"
+                android:inputType="number"
+                android:hint="Jumlah" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Sedang :"
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:textColor="#000"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:id="@+id/etProSedang1"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:textSize="15sp"
+                android:layout_marginLeft="5dp"
+                android:inputType="number"
+
+                android:hint="Jumlah" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="X"
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:textColor="#000"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:id="@+id/etProSedang2"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:textSize="15sp"
+                android:layout_marginLeft="5dp"
+                android:inputType="number"
+
+                android:hint="Jumlah" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Banyak :"
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:textColor="#000"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:id="@+id/etProBanyak1"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:textSize="15sp"
+                android:layout_marginLeft="5dp"
+                android:inputType="number"
+                android:hint="Jumlah" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="X"
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:textColor="#000"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:id="@+id/etProBanyak2"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:textSize="15sp"
+                android:layout_marginLeft="5dp"
+                android:inputType="number"
+                android:hint="Jumlah" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Sangat Banyak :"
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:textColor="#000"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="  X"
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:textColor="#000"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:id="@+id/etProSangatBanyak2"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:textSize="15sp"
+                android:layout_marginLeft="5dp"
+                android:inputType="number"
+                android:hint="Jumlah" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnSimpan"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:text="Simpan"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_blue_selector"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

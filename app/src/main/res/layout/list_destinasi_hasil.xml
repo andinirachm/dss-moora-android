@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginLeft="10dp"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical"
+    android:background="@drawable/card_ui_bg"
+    android:layout_marginRight="10dp">
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/gambarDestinasi"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="8dp" />
+
+    <TextView
+        android:id="@+id/namaDestinasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/gambarDestinasi"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:text="TextView"
+        android:layout_marginTop="10dp"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="#000" />
+
+    <Button
+        android:id="@+id/btnRecommended"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@id/namaDestinasi"
+        android:background="#00D451"
+        android:layout_marginBottom="10dp"
+        android:text="Recommended"
+        android:textColor="#fff"
+        android:textSize="13sp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_toRightOf="@id/gambarDestinasi"/>
+
+</RelativeLayout>

@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:background="#e8e8e8"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv"
+            android:text="Pilih prioritas Anda :"
+            android:layout_marginTop="10dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"></Spinner>
+
+        <Button
+            android:id="@+id/btnProses"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:text="Proses"
+            android:background="@drawable/btn_blue_selector"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content" />
+
+        <ListView
+            android:id="@+id/listViewDestinasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:dividerHeight="7dp"
+            android:divider="@android:color/transparent"
+            android:layout_marginBottom="10dp"></ListView>
+
+        <Button
+            android:id="@+id/btnSelesai"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:text="Detail"
+            android:background="@drawable/btn_blue_selector"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/lbl1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Alternatif"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/lbl2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:text="Alternatif terdiri dari kandidat yang akan diproses"
+            android:textColor="#000"
+            android:textStyle="italic"
+            android:layout_centerHorizontal="true" />
+
+        <TableLayout
+            android:id="@+id/tableLayoutAlternatif"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/linearAlternatif"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/lbl3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Kriteria"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/lbl4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:text="Kriteria merupakan variable yang akan diberi bobot prioritas"
+            android:textColor="#000"
+            android:textStyle="italic"
+            android:layout_marginBottom="5dp"
+            android:layout_centerHorizontal="true" />
+
+        <TableLayout
+            android:id="@+id/tableLayoutKriteria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/lbl5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Cost / Benefit"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/lbl6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:text="Optimasi merupakan"
+            android:textColor="#000"
+            android:layout_marginBottom="5dp"
+            android:textStyle="italic"
+            android:layout_centerHorizontal="true" />
+
+
+        <TableLayout
+            android:id="@+id/tableLayoutCostBenefit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/lbl11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Bobot Awal"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/lbl12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:layout_marginBottom="5dp"
+            android:text="Bobot awal merupakan bobot hasil inputan user"
+            android:textColor="#000"
+            android:textStyle="italic"
+            android:layout_centerHorizontal="true" />
+
+        <TableLayout
+            android:id="@+id/tableLayoutBobot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/lbl13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Matriks Evaluasi"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/lbl14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:layout_marginBottom="5dp"
+            android:text="Merupakan hasil dari evaluasi berdasarkan batas bobot yang ditentukan pada menu konfigurasi"
+            android:textColor="#000"
+            android:textStyle="italic"
+            android:layout_centerHorizontal="true" />
+
+        <TableLayout
+            android:id="@+id/tableLayoutEvalua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/lbl15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Normalisasi Matriks Evaluasi"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:id="@+id/lbl16"
+            android:text="Merupakan hasil normalisasi dari matriks evaluasi"
+            android:textColor="#000"
+            android:layout_marginBottom="5dp"
+            android:textStyle="italic"
+            android:layout_centerHorizontal="true" />
+
+        <TableLayout
+            android:id="@+id/tableLayoutEvaluasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/lbl17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Matriks Probabilitas"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/lbl18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:text="Merupakan matriks probabilitas"
+            android:textColor="#000"
+            android:layout_marginBottom="5dp"
+            android:textStyle="italic"
+            android:layout_centerHorizontal="true" />
+
+        <TableLayout
+            android:id="@+id/tableLayoutProbabilitas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/lbl19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Matriks Entropy"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/lbl20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:text="Merupakan matriks entropy"
+            android:textColor="#000"
+            android:layout_marginBottom="5dp"
+            android:textStyle="italic"
+            android:layout_centerHorizontal="true" />
+
+        <TableLayout
+            android:id="@+id/tableLayoutEntropy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/lbl21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Matriks Ek"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/lbl22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:text="Merupakan matriks ek"
+            android:textColor="#000"
+            android:layout_marginBottom="5dp"
+            android:textStyle="italic"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true" />
+
+        <TableLayout
+            android:id="@+id/tableLayoutEk"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/lbl23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Bobot Akhir"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/lbl24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:text="Merupakan bobot hasil pemrosesan bobot awal dan bobot entropy"
+            android:textColor="#000"
+            android:layout_marginBottom="5dp"
+            android:textStyle="italic"
+            android:layout_centerHorizontal="true" />
+
+        <TableLayout
+            android:id="@+id/tableLayoutBobotAkhir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/lbl9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Matriks Keputusan"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/lbl10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:text="Merupakan matriks ek"
+            android:textColor="#000"
+            android:layout_marginBottom="5dp"
+            android:textStyle="italic"
+            android:layout_centerHorizontal="true" />
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+
+        <TextView
+            android:id="@+id/lbl7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Optimasi"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/lbl8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:text="Optimasi merupakan"
+            android:textColor="#000"
+            android:layout_marginBottom="5dp"
+            android:textStyle="italic"
+            android:layout_centerHorizontal="true" />
+
+
+        <TableLayout
+            android:id="@+id/tableLayoutOptimasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/lbl25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Rasio"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/lbl26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:text="Merupakan matriks ek"
+            android:textColor="#000"
+            android:layout_marginBottom="5dp"
+            android:textStyle="italic"
+            android:layout_centerHorizontal="true" />
+
+        <TableLayout
+            android:id="@+id/tableLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/lbl27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Normalisasi"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/lbl28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:text="Merupakan matriks ek"
+            android:textColor="#000"
+            android:layout_marginBottom="5dp"
+            android:textStyle="italic"
+            android:layout_centerHorizontal="true" />
+
+        <TableLayout
+            android:id="@+id/tableLayoutHasil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/lbl29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Proses Perankingan"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/lbl30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:text="Merupakan matriks ek"
+            android:textColor="#000"
+            android:layout_marginBottom="5dp"
+            android:textStyle="italic"
+            android:layout_centerHorizontal="true" />
+
+        <TableLayout
+            android:layout_marginTop="5dp"
+            android:id="@+id/tableLayout3"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

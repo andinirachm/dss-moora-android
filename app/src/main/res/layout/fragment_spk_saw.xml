@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masukkan persentase :"
+            android:textSize="15sp"
+            android:id="@+id/textView"
+            android:textColor="#000"
+            android:layout_marginTop="0dp"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total seluruh persentase adalah 100%"
+            android:textSize="14sp"
+            android:textColor="#000"
+            android:layout_marginTop="0dp"
+            android:textStyle="italic"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jarak :"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:id="@+id/textView2"
+            android:textColor="#000"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:id="@+id/etPersentaseJarak"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:inputType="number"
+            android:maxLength="3"
+            android:hint="Persentase Jarak (%)" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Biaya :"
+            android:textSize="15sp"
+            android:id="@+id/textView3"
+            android:textColor="#000"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:id="@+id/etPersentaseBiaya"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:inputType="number"
+            android:maxLength="3"
+            android:hint="Persentase Biaya (%)" />
+
+        <Button
+            android:id="@+id/btnSelesai"
+            android:layout_marginTop="3dp"
+            android:layout_width="match_parent"
+            android:text="Proses"
+            android:background="@drawable/btn_blue_selector"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/lbl1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Alternatif"
+            android:textColor="#000"
+            android:layout_marginBottom="5dp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/linearAlternatif"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TableLayout
+            android:id="@+id/tableLayoutAlternatif"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/lbl2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Kriteria"
+            android:textColor="#000"
+            android:layout_marginBottom="5dp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <TableLayout
+            android:id="@+id/tableLayoutKriteria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/lbl3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Cost / Benefit"
+            android:textColor="#000"
+            android:layout_marginBottom="5dp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <TableLayout
+            android:id="@+id/tableLayoutCostBenefit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/lbl4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Bobot"
+            android:textColor="#000"
+            android:layout_marginBottom="5dp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <TableLayout
+            android:id="@+id/tableLayoutBobot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/lbl5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Matriks Keputusan"
+            android:textColor="#000"
+            android:layout_marginBottom="5dp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/lbl6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Normalisasi Matriks"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <TableLayout
+            android:id="@+id/tableLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/lbl7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Matriks Hasil"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <TableLayout
+            android:id="@+id/tableLayoutHasil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/lbl8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Proses Perankingan"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <TableLayout
+            android:layout_marginTop="5dp"
+            android:id="@+id/tableLayout3"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>
